@@ -1,20 +1,15 @@
 import pickle
 import streamlit as st
-from read import MAIN
+from model import dtModel
 
 # IMPORTING THE TRAINED MODEL 
 
 # Open the pickle file in binary read mode.
-with open("my_pickle_file.pkl", "rb") as f:
-    # Load the pickled object from the file.
-    # model = pickle.load(f)
-    sometext = 'Done'
+model = dtModel
 
-# Close the pickle file.
-f.close()
+
 
 # Use the pickled object in your application.
-# print(my_object)
 
 # THE APP INTERFACE
 st.title("Music Genre Prediction")
