@@ -7,7 +7,8 @@ from read import MAIN
 # Open the pickle file in binary read mode.
 with open("my_pickle_file.pkl", "rb") as f:
     # Load the pickled object from the file.
-    model = pickle.load(f)
+    # model = pickle.load(f)
+    sometext = 'Done'
 
 # Close the pickle file.
 f.close()
@@ -16,7 +17,7 @@ f.close()
 # print(my_object)
 
 # THE APP INTERFACE
-# st.title("Music Genre Prediction")
+st.title("Music Genre Prediction")
 
 # gender = st.selectbox("Select Gender", ['Male', 'Female'])
 # # age = st.text_input("Age")
@@ -34,5 +35,5 @@ f.close()
 #     st.write(prediction)
 #     st.toast("completed 1 prediction")
     
-# # if clear:
-# #     pred_box = ''
+# if clear:
+#     pred_box = ''
