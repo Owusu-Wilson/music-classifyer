@@ -1,14 +1,19 @@
 import pickle
 import streamlit as st
-from model import dtModel
+# from model import dtModel
 
 # IMPORTING THE TRAINED MODEL 
 
 # Open the pickle file in binary read mode.
-model = dtModel
+# model = dtModel
 
 
+# picled version of the model
+with open("my_pickle_file.pkl", "rb") as f:
+    # Load the pickled object from the file.
+    model = pickle.load(f)
 
+f.close()
 # Use the pickled object in your application.
 
 # THE APP INTERFACE
