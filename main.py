@@ -19,21 +19,21 @@ f.close()
 # THE APP INTERFACE
 st.title("Music Genre Prediction")
 
-# gender = st.selectbox("Select Gender", ['Male', 'Female'])
-# # age = st.text_input("Age")
-# age = st.slider("Select Age", min_value=18, max_value=70)
+gender = st.selectbox("Select Gender", ['Male', 'Female'])
+# age = st.text_input("Age")
+age = st.slider("Select Age", min_value=18, max_value=70)
 
-# submit = st.button("Predict")
-# clear = st.button("Clear")
-# pred_box = st.write()
+submit = st.button("Predict")
+clear = st.button("Clear")
+pred_box = st.write()
 
-# gender_bool = 1 if gender=='Male' else 0
+gender_bool = 1 if gender=='Male' else 0
 
-# if submit:
+if submit:
     
-#     prediction = model.predict([[gender_bool, age]])
-#     st.write(prediction)
-#     st.toast("completed 1 prediction")
+    prediction = model.predict([[gender_bool, age]])
+    st.write(prediction)
+    st.toast("completed 1 prediction")
     
-# if clear:
-#     pred_box = ''
+if clear:
+    pred_box = ''
